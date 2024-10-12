@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AES File Encryption & Decryption</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>AES File Encryption & Decryption</h1>
+
+      <div class="input-section">
+        <label for="key-input">Enter Encryption Key (16 characters):</label>
+        <input
+          type="text"
+          id="key-input"
+          maxlength="16"
+          placeholder="Encryption Key (16 chars)"
+        />
+      </div>
+
+      <div class="file-section">
+        <input type="file" id="file-input" />
+      </div>
+
+      <div class="action-buttons">
+        <button id="encrypt-btn" class="btn encrypt">Encrypt File</button>
+        <button id="decrypt-btn" class="btn decrypt">Decrypt File</button>
+      </div>
+
+      <div id="output-message"></div>
+      <a id="download-link" style="display: none">Download Processed File</a>
+
+      <footer>
+        <p>Made by <strong>Farheen Hamid Mujawar</strong></p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

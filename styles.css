@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("bg.webp");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: #e74c3c;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input-section,
+.file-section {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="file"] {
+  padding: 12px;
+  width: 80%;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.encrypt {
+  background-color: #27ae60;
+}
+
+.decrypt {
+  background-color: #e74c3c;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+#output-message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #777;
+}
+
+footer p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+footer strong {
+  color: #2c3e50;
+}
