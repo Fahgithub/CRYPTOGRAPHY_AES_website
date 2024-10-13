@@ -62,5 +62,5 @@ The web tool uses the following technologies:
 - **crypto.subtle.decrypt:** Decrypts previously encrypted data.
 - **crypto.subtle.importKey:** Imports the user-supplied key for cryptographic operations.
 
-### Conclusion
+### Conclusions
 This AES File Encryption & Decryption web tool provides a user-friendly interface for secure file management. By allowing users to encrypt and decrypt files with a custom key, it offers a practical solution to safeguard sensitive information entirely within the browser. The Web Crypto API's native support ensures robust and efficient encryption, eliminating the need for external libraries or server-side operations.
