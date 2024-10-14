@@ -6,9 +6,11 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-image: url("bg.webp");
+  background-image: url("bg_img_new.jpeg");
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
   color: #333;
 }
 
@@ -56,6 +58,7 @@ input[type="file"]:focus {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
 }
 
 .btn {
@@ -109,4 +112,39 @@ footer p {
 
 footer strong {
   color: #2c3e50;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px; /* Smaller font size on smaller screens */
+  }
+
+  input[type="text"],
+  input[type="file"] {
+    width: 90%; /* Wider inputs on smaller screens */
+  }
+
+  .btn {
+    padding: 10px 20px; /* Adjust button size */
+    font-size: 16px; /* Smaller font size */
+  }
+
+  footer {
+    font-size: 14px; /* Smaller footer text */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px; /* Less padding on smaller devices */
+  }
+
+  h1 {
+    font-size: 18px; /* Even smaller font size */
+  }
+
+  .btn {
+    width: 100%; /* Full width buttons */
+  }
 }
